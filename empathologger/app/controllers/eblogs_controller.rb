@@ -1,0 +1,2 @@
+class EblogsController < ApplicationController
+end

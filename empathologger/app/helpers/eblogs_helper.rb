@@ -1,0 +1,2 @@
+module EblogsHelper
+end
