@@ -1,0 +1,10 @@
+
+<container>
+  <% @eblogs.each do |eblog| %>
+  <div>
+    <h2 style="font-style: italic;"><%= eblog.title %></h2>
+    <p>-by <%= eblog.author %></p>
+    <a href="/eblogs/<%= eblog.id %>">Read</a>
+  </div>
+  <% end %>
+</container>

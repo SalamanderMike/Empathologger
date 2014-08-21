@@ -1,0 +1,16 @@
+Create New eBlog!
+
+<container>
+  <form action="/eblogs" method="post">
+    <input type="text" name="eblog[author]" placeholder="Author"><br>
+    <input type="text" name="eblog[title]" placeholder="Title"><br>
+    <textarea name="eblog[content]" placeholder="eBlog"></textarea><br>
+
+    <!-- For every form you create, this security code is required -->
+    <!-- to patch up security holes -->
+      <%= token_tag form_authenticity_token %>
+
+
+    <button> Save eBlog </button>
+  </form>
+</container>

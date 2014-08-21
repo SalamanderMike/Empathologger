@@ -1,3 +1,55 @@
 // Place all the styles related to the eblogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background: -webkit-linear-gradient(right, rgba(179, 240, 255,1), rgba(0,0,0,.1));
+  background: -o-linear-gradient(right, rgba(179, 240, 255,1), rgba(0,0,0,.1));
+  background: linear-gradient(to left, rgba(179, 240, 255,1), rgba(0,0,0,.1));
+  font-family: 'Palatino';
+
+}
+
+/*Navbar Color Override*/
+.navbar-default {
+
+    background-image: -webkit-linear-gradient(right, #ffc342 0%, #dfdfdf 45%, #dfdfdf 60%, #c8c7ff 100%);
+    background-image: -moz-linear-gradient(right, #ffe0f4 0%, #dfdfdf 60%, #c8c7ff 100%);
+    background-image: linear-gradient(right, #ffe0f4 0%, #dfdfdf 60%, #c8c7ff 100%);
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2em;
+}
+
+container {
+  position: absolute;
+  left: 200px;
+  right: 200px;
+}
+
+h1 {
+  font-family: 'Palatino';
+  text-shadow: 6px 4px 5px #aaa;
+  color: #811378;
+}
+
+h1 em {
+  color: #eb00d7;
+}
+
+label {
+  color: #5c0099;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  -webkit-transition: all .2s ease-in-out;
+  background-color: #ffb752;
+}
+
+button:hover {
+  background-color: #ff85f5;
+  cursor: pointer;
+}

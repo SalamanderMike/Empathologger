@@ -1,4 +1,41 @@
 Rails.application.routes.draw do
+  root to: 'eblogs#index'
+  get '/eblogs', to: 'eblogs#index'
+  get '/eblogs/new', to: 'eblogs#new'
+  get '/eblogs/:id', to: 'eblogs#display'
+
+  post '/eblogs', to: 'eblogs#create'
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +90,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
