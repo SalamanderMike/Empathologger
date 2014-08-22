@@ -1,9 +1,9 @@
 
 <container>
   <%= form_for @eblog do |f| %>
-    <%= f.text_field :author, placeholder: "Author" %>
-    <%= f.text_field :title, placeholder: "Title" %></br></br>
-    <%= f.text_area :content, placeholder: "eBlog" %></br>
+    <%= f.text_field :author,class: "form-control",  placeholder: "Author" %></br>
+    <%= f.text_field :title, class: "form-control", placeholder: "Title" %></br>
+    <%= f.text_area :content, class: "form-control", placeholder: "eBlog" %></br>
     <%= f.submit "Save Your Empathy Blog" %>
   <% end %>
 </container>

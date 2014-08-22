@@ -1,10 +1,12 @@
 
 <container>
-  <h2><%= @eblog.title %></h2>
-  <p style="font-style: italic;"><%= @eblog.content %></p>
+  <h3 style="margin: -5px;"><%= @eblog.title %></h3>
   <p>-By <%= @eblog.author %></br>
-
-  <%= link_to "Edit", edit_eblog_path(@eblog) %>
+  <p style="font-style: italic;"><%= @eblog.content %></p>
+  <p>
+  <%= link_to "Comment ", new_eblog_comment_path(@eblog) %>or
+  <%= link_to "Edit ", edit_eblog_path(@eblog) %>or
+  <%= link_to  "Delete", eblog_path(@eblog), method: :delete %>
   </p>
 </container>
 

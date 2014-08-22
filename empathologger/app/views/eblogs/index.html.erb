@@ -1,12 +1,15 @@
-
+<div style="text-align: center;">
+<p style="font-size: 2em;font-style: italic;margin: -2px;">Stop blogging about yourself!</p>
+<p style="font-size: 1.5em;font-style: italic;margin: -2px;">Develop Empathy;</p>
+<p style="font-size: 1.5em;font-style: italic;">blog about what other people are experiencing...</p></br></br>
+</div>
 <container>
   <% @eblogs.each do |eblog| %>
   <div>
-    <h2><%= eblog.title %></h2>
+    <h3 style="margin: -5px;"><%= eblog.title %></h3>
     <p>-by <%= eblog.author %></p>
-
-    <%= link_to "Read ", eblog_path(eblog) %>or
-    <%= link_to  "Delete", eblog_path(eblog), method: :delete %>
+    <p><%= link_to "Read ", eblog_path(eblog) %>or
+    <%= link_to  "Delete", eblog_path(eblog), method: :delete %></p></br></br>
   </div>
   <% end %>
 </container>
