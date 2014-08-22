@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
   def new
     eblog_id = params[:eblog_id]
     @eblog = Eblog.find(eblog_id)
-    @comments = @eblog.comments.new
+    @comment = @eblog.comments.new
   end
 
   def create
