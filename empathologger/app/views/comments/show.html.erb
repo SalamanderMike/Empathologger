@@ -1,16 +1,17 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-offset-4 col-xs-4">
-      <h2><%= @eblog.title %></h2>
+      <h2 style="margin: -5px;"><%= @eblog.title %></h2>
+      <p>-by <%= @eblog.author %></p>
       <p>
-        <%= @eblog.content %>
+        <p style="font-style: italic;"><%= @eblog.content %></p>
       </p>
     </div>
   </div>
 
   <div class="row">
     <div class="col-xs-offset-4 col-xs-4">
-      <h2><%= @comment.title%></h2>
+      <h2 style="font-size: 1.5em;"><%= @comment.title%></h2>
       <p>
         <%= @comment.body %>
       </p>

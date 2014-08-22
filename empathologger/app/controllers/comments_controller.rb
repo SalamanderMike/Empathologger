@@ -17,6 +17,7 @@ class CommentsController < ApplicationController
 
     new_comment = params.require(:comment).permit(:title, :body)
     @comment = @eblog.comments.create(new_comment)
+    redirect_to eblog_comment_path(@eblog.id, @comment)
   end
 
   def show
