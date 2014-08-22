@@ -2,9 +2,12 @@
 <container>
   <% @eblogs.each do |eblog| %>
   <div>
-    <h2 style="font-style: italic;"><%= eblog.title %></h2>
+    <h2><%= eblog.title %></h2>
     <p>-by <%= eblog.author %></p>
-    <a href="/eblogs/<%= eblog.id %>">Read</a>
+
+    <%= link_to "Read ", eblog_path(eblog) %>or
+    <%= link_to  "Delete", eblog_path(eblog), method: :delete %>
   </div>
   <% end %>
 </container>
+

@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140821045431) do
+ActiveRecord::Schema.define(version: 20140822014714) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "comments", force: true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.integer  "eblog_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["eblog_id"], name: "index_comments_on_eblog_id", using: :btree
 
   create_table "eblogs", force: true do |t|
     t.string   "author"

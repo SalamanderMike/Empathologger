@@ -1,12 +1,8 @@
 Rails.application.routes.draw do
   root to: 'eblogs#index'
-  get '/eblogs', to: 'eblogs#index'
-  get '/eblogs/new', to: 'eblogs#new'
-  get '/eblogs/:id', to: 'eblogs#display'
-
-  post '/eblogs', to: 'eblogs#create'
-
-
+  resources :eblogs do
+    resources :comments
+  end
 end
 
 

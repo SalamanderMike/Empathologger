@@ -2,6 +2,9 @@
 <container>
   <h2><%= @eblog.title %></h2>
   <p style="font-style: italic;"><%= @eblog.content %></p>
-  <p>-By <%= @eblog.author %>
+  <p>-By <%= @eblog.author %></br>
+
+  <%= link_to "Edit", edit_eblog_path(@eblog) %>
   </p>
 </container>
+
